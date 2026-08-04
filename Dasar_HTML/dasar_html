@@ -1,0 +1,27 @@
+<body>
+    <form>
+        nama:<input type="text" name="nama"><br/>
+        alamat:<input type="text" name="alamat"><br/>
+        password:<input type="password" name="password"><br/>
+        Jenis Kelamin:
+                <input type="radio" name="jk" value="laki-laki"/>laki-laki
+                <input type="radio" name="jk" value="perempuan"/>perempuan
+                <br/>
+        bahas programan yang dikuasai:
+                <input type="chekbox" name="web">Web
+                <input type="chekbox" name="mobile">MOBILE 
+                <input type="chekbox" name="desk">DESKTOP 
+                <br/>
+        kota asal:
+            <select>
+                <option>Semarang</option>option>
+                <option>Bandung</option>option>
+            </select>
+            <br/>
+        pesan anda:
+        <textara></textara>
+        <br/>
+        <input type="submit" value="proses">
+    </form>
+    </body>
+    </html>
