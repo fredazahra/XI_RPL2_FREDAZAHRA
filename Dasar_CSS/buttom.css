@@ -1,0 +1,33 @@
+.btn:before,
+.btn:after {
+    position: absolute;
+    content: attr(data-title);
+    z-index: -1;
+}
+
+.btn:before {
+    top: -0.1em;
+    right: -0.1em;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.btn:after {
+    bottom: -0.1em;
+    left: -0.1em;
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+.btn:hover {
+    background-color: rgba(127, 157, 181, 1);
+    box-shadow: 0.05em 0.05em 0.1em rgba(0,0,0,0.5);
+}
+
+.btn:hover:before {
+    top: 0;
+    right: 0;
+}
+
+.btn:hover:after {
+    bottom: 0;
+    left: 0;
+}
