@@ -1,0 +1,584 @@
+/* =====================================
+   RESET
+===================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Warna background seperti contoh */
+    background-color: #dceeff;
+
+    color: #111;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   CONTAINER UTAMA
+===================================== */
+
+.container {
+    width: 90%;
+    max-width: 1350px;
+
+    margin: 24px auto;
+
+    background-color: white;
+
+    padding: 25px 30px 0;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 2px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+header {
+    text-align: center;
+
+    padding-bottom: 25px;
+}
+
+header h1 {
+    color: #064681;
+
+    font-size: 50px;
+
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+
+/* =====================================
+   NAVIGASI
+===================================== */
+
+nav {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 23px;
+
+    flex-wrap: wrap;
+}
+
+nav a {
+    background-color: #32649b;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 24px;
+
+    padding: 13px 38px;
+
+    border-radius: 7px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #174c83;
+
+    transform: translateY(-2px);
+}
+
+
+/* =====================================
+   SECTION
+===================================== */
+
+section {
+    padding: 15px 0 30px;
+
+    scroll-margin-top: 20px;
+}
+
+section h2 {
+    color: #064681;
+
+    font-size: 36px;
+
+    margin-bottom: 18px;
+
+    padding-bottom: 5px;
+
+    border-bottom: 3px solid #32649b;
+}
+
+section p {
+    font-size: 22px;
+
+    margin-bottom: 12px;
+
+    text-align: justify;
+}
+
+
+/* =====================================
+   BIODATA
+===================================== */
+
+.biodata {
+    display: flex;
+
+    gap: 40px;
+
+    align-items: center;
+}
+
+.foto-profil {
+    width: 260px;
+
+    flex-shrink: 0;
+}
+
+.foto-profil img {
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    border-radius: 8px;
+
+    border: 4px solid #32649b;
+}
+
+.data {
+    flex: 1;
+}
+
+table {
+    border-collapse: collapse;
+
+    width: 100%;
+
+    font-size: 20px;
+}
+
+td {
+    padding: 8px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.data td:first-child {
+    font-weight: bold;
+
+    width: 250px;
+}
+
+
+/* =====================================
+   GALERI FOTO
+===================================== */
+
+.gallery {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.gallery-item {
+    border: 2px solid #32649b;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    background-color: #f5f5f5;
+
+    text-align: center;
+}
+
+.gallery-item img {
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+
+    transition: 0.3s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item p {
+    font-size: 18px;
+
+    font-weight: bold;
+
+    text-align: center;
+
+    padding: 8px;
+
+    margin: 0;
+}
+
+
+/* =====================================
+   LIST
+===================================== */
+
+section ul,
+section ol {
+    padding-left: 30px;
+
+    font-size: 21px;
+}
+
+section li {
+    margin-bottom: 7px;
+}
+
+
+/* =====================================
+   ORGANISASI
+===================================== */
+
+.organization-table {
+    border: 1px solid #777;
+
+    text-align: center;
+}
+
+.organization-table th {
+    background-color: #32649b;
+
+    color: white;
+
+    padding: 12px;
+
+    font-size: 20px;
+}
+
+.organization-table td {
+    padding: 10px;
+
+    border: 1px solid #aaa;
+}
+
+.organization-table tr:nth-child(even) {
+    background-color: #f1f1f1;
+}
+
+
+/* =====================================
+   KELEBIHAN
+===================================== */
+
+.check-list {
+    list-style-type: "✓  ";
+
+    color: #111;
+}
+
+.check-list li::marker {
+    color: #32649b;
+
+    font-weight: bold;
+}
+
+
+/* =====================================
+   KOMPETENSI
+===================================== */
+
+.kompetensi {
+    max-width: 900px;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 19px;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+.bar {
+    width: 100%;
+
+    height: 20px;
+
+    background-color: #ddd;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+
+.bar div {
+    height: 100%;
+
+    background-color: #32649b;
+}
+
+
+/* Persentase */
+
+.html {
+    width: 80%;
+}
+
+.css {
+    width: 75%;
+}
+
+.office {
+    width: 80%;
+}
+
+.teamwork {
+    width: 85%;
+}
+
+.speaking {
+    width: 70%;
+}
+
+
+/* =====================================
+   PORTOFOLIO
+===================================== */
+
+.portfolio {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+.portfolio-card {
+    border: 2px solid #32649b;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    background-color: white;
+}
+
+.portfolio-card img {
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.portfolio-card h3 {
+    color: #064681;
+
+    font-size: 23px;
+
+    padding: 12px 15px 0;
+}
+
+.portfolio-card p {
+    padding: 0 15px 15px;
+
+    font-size: 17px;
+
+    text-align: left;
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    text-align: center;
+
+    margin-top: 30px;
+
+    padding: 30px;
+
+    background-color: #32649b;
+
+    color: white;
+
+    border-radius: 8px 8px 0 0;
+}
+
+footer h3 {
+    font-size: 25px;
+}
+
+footer p {
+    font-size: 16px;
+
+    margin: 5px 0;
+}
+
+
+/* =====================================
+   RESPONSIVE TABLET
+===================================== */
+
+@media (max-width: 900px) {
+
+    .container {
+        width: 94%;
+
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 40px;
+    }
+
+    nav {
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 18px;
+
+        padding: 10px 20px;
+    }
+
+    .biodata {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .foto-profil {
+        width: 220px;
+    }
+
+    .gallery {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .portfolio {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+/* =====================================
+   RESPONSIVE HP
+===================================== */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+
+        margin: 10px auto;
+
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+    nav a {
+        text-align: center;
+
+        font-size: 18px;
+    }
+
+    section h2 {
+        font-size: 27px;
+    }
+
+    section p {
+        font-size: 17px;
+    }
+
+    section ul,
+    section ol {
+        font-size: 17px;
+    }
+
+    .biodata {
+        gap: 20px;
+    }
+
+    .foto-profil {
+        width: 180px;
+
+        margin: auto;
+    }
+
+    .foto-profil img {
+        height: 220px;
+    }
+
+    table {
+        font-size: 15px;
+    }
+
+    .data td:first-child {
+        width: 40%;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item img {
+        height: 250px;
+    }
+
+    .organization-table {
+        font-size: 13px;
+    }
+
+    .organization-table th {
+        font-size: 14px;
+    }
+
+    .portfolio {
+        grid-template-columns: 1fr;
+    }
+
+}
