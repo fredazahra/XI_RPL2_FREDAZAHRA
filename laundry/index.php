@@ -1,20 +1,14 @@
 <?php
 // index.php
 ?>
-
 <!DOCTYPE html>
 <html lang="id">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>LaundryKu - Laundry Cepat, Bersih & Wangi</title>
-
     <link rel="stylesheet" href="assets/css/bootstrap.css">
-
     <style>
 
         * {
@@ -570,295 +564,183 @@
                     <div class="card-icon">
                         👕
                     </div>
-
                     <h3>
                         Cuci & Setrika
                     </h3>
-
                     <p>
-
                         Pakaian dicuci, dikeringkan
                         dan disetrika hingga rapi.
-
                     </p>
-
                     <strong>
                         Rp10.000 / kg
                     </strong>
-
                 </div>
-
             </div>
-
-
             <div class="col-md-4">
-
                 <div class="card">
-
                     <div class="card-icon">
                         ⚡
                     </div>
-
                     <h3>
                         Express
                     </h3>
-
                     <p>
-
                         Proses laundry lebih cepat
                         untuk kebutuhan mendesak.
-
                     </p>
-
                     <strong>
                         Rp15.000 / kg
                     </strong>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
 </section>
-
-
 <!-- =========================
      CARA KERJA
 ========================= -->
-
 <section class="section how"
          id="cara">
-
     <div class="container">
-
         <div class="section-title">
-
             <h2>
                 Cara Kerja
             </h2>
-
             <p>
                 Laundry jadi lebih mudah.
             </p>
-
         </div>
-
-
         <div class="row">
-
             <div class="col-md-3">
-
                 <div class="step">
-
                     <div class="number">
                         1
                     </div>
-
                     <h3>
                         Login
                     </h3>
-
                     <p>
                         Login menggunakan
                         akun kamu.
                     </p>
-
                 </div>
-
             </div>
-
-
             <div class="col-md-3">
-
                 <div class="step">
-
                     <div class="number">
                         2
                     </div>
-
                     <h3>
                         Pesan
                     </h3>
-
                     <p>
                         Pilih layanan laundry
                         yang kamu inginkan.
                     </p>
-
                 </div>
-
             </div>
-
-
             <div class="col-md-3">
-
                 <div class="step">
-
                     <div class="number">
                         3
                     </div>
-
                     <h3>
                         Diproses
                     </h3>
-
                     <p>
                         Laundry diproses
                         oleh pegawai.
                     </p>
-
                 </div>
-
             </div>
-
-
             <div class="col-md-3">
-
                 <div class="step">
-
                     <div class="number">
                         4
                     </div>
-
                     <h3>
                         Selesai
                     </h3>
-
                     <p>
                         Pakaian bersih dan
                         siap digunakan.
                     </p>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
 </section>
-
-
 <!-- =========================
      CTA
 ========================= -->
-
 <section class="cta">
-
     <div class="container">
-
         <h2>
             Siap Laundry Sekarang?
         </h2>
-
         <p>
             Login dan mulai gunakan LaundryKu.
         </p>
-
         <a href="login_page.php"
            class="btn-white">
-
             Login Sekarang →
-
         </a>
-
     </div>
-
 </section>
-
-
 <!-- =========================
      FOOTER
 ========================= -->
-
 <footer id="tentang">
-
     <div class="container">
-
         <div class="row">
-
             <div class="col-md-6">
-
                 <h3>
                     🧺 LaundryKu
                 </h3>
-
                 <p>
-
                     Sistem Informasi Laundry yang
                     membantu pelanggan mengelola
                     kebutuhan laundry dengan mudah
                     dan praktis.
-
                 </p>
-
             </div>
-
-
             <div class="col-md-3">
-
                 <h3>
                     Navigasi
                 </h3>
-
                 <p>
                     <a href="#home"
                        style="color:white;">
                         Home
                     </a>
                 </p>
-
                 <p>
                     <a href="#layanan"
                        style="color:white;">
                         Layanan
                     </a>
                 </p>
-
             </div>
-
-
             <div class="col-md-3">
-
                 <h3>
                     Kontak
                 </h3>
-
                 <p>
                     📍 Jl. Grajegan-Tampingan blok 123
                 </p>
-
                 <p>
                     📞 0812-3456-7890
                 </p>
-
             </div>
-
         </div>
-
-
         <div class="footer-bottom">
-
             © <?php echo date("Y"); ?>
-
             LaundryKu.
             All Rights Reserved.
-
         </div>
-
     </div>
-
 </footer>
-
-
 <script src="assets/js/jquery.js"></script>
-
 <script src="assets/js/bootstrap.js"></script>
-
 </body>
-
 </html>
